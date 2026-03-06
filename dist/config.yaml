@@ -1,1 +1,49 @@
+llm:
+  base_url: ***(大模型API的url)
+  api_key: ***(对应的API KEY)
+  model: ***
+output:
+  dir: ./daily
+arxiv:
+  enabled: true
+  days_back: 1
+  categories:
+  - cs.AI
+  - cs.CL
+  - cs.CV
+rss:
+  enabled: true
+  feeds:
+  - name: IEEE TMI
+    url: https://ieeexplore.ieee.org/rss/TOC42.XML
+  - name: IEEE TIP
+    url: https://ieeexplore.ieee.org/rss/TOC83.XML
+  - name: IEEE TMM
+    url: https://ieeexplore.ieee.org/rss/TOC6046.XML
+  - name: Nature
+    url: https://www.nature.com/nature.rss
+  - name: Nature BME
+    url: https://www.nature.com/natbiomedeng.rss
+  - name: Nature Medicine
+    url: https://www.nature.com/nm.rss
+  - name: Nature Communications
+    url: https://www.nature.com/ncomms.rss
+  - name: Medical Image Analysis
+    url: https://rss.sciencedirect.com/publication/science/13618415
+  - name: Pattern Recognition
+    url: https://rss.sciencedirect.com/publication/science/00313203
+  days_back: 1
+research_profile:
+  关键词:
+  - 关键词1
+  - 关键词2
+  - 关键词3
+  详细的研究方向: 填入更加详细的研究方向，便于完成LLM的论文相关性分数计算。
+scoring:
+  highlight_threshold: 4
+  read_threshold: 2
+  max_highlight: 5
+  max_read: 5
+system:
+  schedule_time: '09:00'
 
