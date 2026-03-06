@@ -48,5 +48,6 @@ scoring:
   max_highlight: 5
   max_read: 5
 system:
-  schedule_time: 09:00
+  schedule_time: '09:00'
+
 
