@@ -1,12 +1,12 @@
 llm:
-  base_url: https://api.chatanywhere.tech/v1/chat/completions
-  api_key: sk-brCqIy1U7y4St1zJnFbfRE6S601RMpBCSc9iad614mkHXRUE
-  model: o3-mini
+  base_url: ***(大模型API的url)
+  api_key: ***(对应的API KEY)
+  model: ***
 output:
-  dir: E:/Coisini_Glenda/Desktop/daily
+  dir: ./daily
 arxiv:
   enabled: true
-  days_back: 2
+  days_back: 1
   categories:
   - cs.AI
   - cs.CL
@@ -32,7 +32,7 @@ rss:
     url: https://rss.sciencedirect.com/publication/science/13618415
   - name: Pattern Recognition
     url: https://rss.sciencedirect.com/publication/science/00313203
-  days_back: 2
+  days_back: 1
 research_profile:
   关键词:
   - Medical LLM Diagnostic
@@ -44,32 +44,9 @@ research_profile:
     in research on medical LLM assessment.
 scoring:
   highlight_threshold: 4
-  read_threshold: 2
-  score_prompt_template: '你是科研助手，请评估每篇论文与研究方向的相关性（1-5分）。
-
-
-    研究方向：
-
-    {profile_str}
-
-
-    请严格按以下标准打分：
-
-    5分：高度相关（直接命中核心研究，必读）
-
-    4分：相关（涉及相关技术或应用场景，值得参考）
-
-    3分：部分相关（底层方法或视角有启发，但领域有差异）
-
-    2分：边缘相关（仅仅提到通用关键词，研究重点不同）
-
-    1分：毫不相关
-
-
-    论文列表：
-
-    {papers_text}'
+  read_threshold: 3
   max_highlight: 5
   max_read: 5
 system:
   schedule_time: 09:00
+
