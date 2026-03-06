@@ -74,4 +74,6 @@ rss.feeds：可以自由添加任何期刊的 RSS 链接。
 ###💡 研究启示：预留的手动记录区域，方便记录灵感。
 
 ## 直接使用
-为了便于使用，已经完成了简单的打包“dist/DailyPaperTracker.exe”。使用window操作系统，可以直接管理员身份运行setup_task.bat，会执行每日定点的自动论文抓取和总结。使用前可以运行DailyPaperTracker.exe完成基本配置，包括API，研究方向，关键词以及定点操作的具体时间。
+为了便于使用，已经完成了简单的打包“dist/DailyPaperTracker.exe”。使用window操作系统，可以直接管理员身份运行setup_task.bat，会执行每日定点的自动论文抓取和总结。
+
+使用前需要先运行DailyPaperTracker.exe完成基本配置，包括API，研究方向，关键词以及定点操作的具体时间。保存配置后，双击setup_task.bat，确认成功后（任务已在后台生效），就会按照设置的时间自动抓取和总结论文。
