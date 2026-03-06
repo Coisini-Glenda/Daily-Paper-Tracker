@@ -35,19 +35,14 @@ rss:
   days_back: 1
 research_profile:
   关键词:
-  - Medical LLM Diagnostic
-  - Medical Report Generation
-  - Medical Multimodal Imaging
-  - LLM evaluation
-  详细的研究方向: Using LLM for medical image analysis, including diagnostic decision-making,
-    report generation, visual problem solving, and reasoning, can also be considered
-    in research on medical LLM assessment.
+  - 关键词1
+  - 关键词2
+  - 关键词3
+  详细的研究方向: 填入更加详细的研究方向，便于完成LLM的论文相关性分数计算。
 scoring:
   highlight_threshold: 4
-  read_threshold: 3
+  read_threshold: 2
   max_highlight: 5
   max_read: 5
 system:
   schedule_time: '09:00'
-
-
