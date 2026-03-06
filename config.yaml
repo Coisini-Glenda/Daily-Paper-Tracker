@@ -1,0 +1,75 @@
+llm:
+  base_url: https://api.chatanywhere.tech/v1/chat/completions
+  api_key: sk-brCqIy1U7y4St1zJnFbfRE6S601RMpBCSc9iad614mkHXRUE
+  model: o3-mini
+output:
+  dir: E:/Coisini_Glenda/Desktop/daily
+arxiv:
+  enabled: true
+  days_back: 2
+  categories:
+  - cs.AI
+  - cs.CL
+  - cs.CV
+rss:
+  enabled: true
+  feeds:
+  - name: IEEE TMI
+    url: https://ieeexplore.ieee.org/rss/TOC42.XML
+  - name: IEEE TIP
+    url: https://ieeexplore.ieee.org/rss/TOC83.XML
+  - name: IEEE TMM
+    url: https://ieeexplore.ieee.org/rss/TOC6046.XML
+  - name: Nature
+    url: https://www.nature.com/nature.rss
+  - name: Nature BME
+    url: https://www.nature.com/natbiomedeng.rss
+  - name: Nature Medicine
+    url: https://www.nature.com/nm.rss
+  - name: Nature Communications
+    url: https://www.nature.com/ncomms.rss
+  - name: Medical Image Analysis
+    url: https://rss.sciencedirect.com/publication/science/13618415
+  - name: Pattern Recognition
+    url: https://rss.sciencedirect.com/publication/science/00313203
+  days_back: 2
+research_profile:
+  关键词:
+  - Medical LLM Diagnostic
+  - Medical Report Generation
+  - Medical Multimodal Imaging
+  - LLM evaluation
+  详细的研究方向: Using LLM for medical image analysis, including diagnostic decision-making,
+    report generation, visual problem solving, and reasoning, can also be considered
+    in research on medical LLM assessment.
+scoring:
+  highlight_threshold: 4
+  read_threshold: 2
+  score_prompt_template: '你是科研助手，请评估每篇论文与研究方向的相关性（1-5分）。
+
+
+    研究方向：
+
+    {profile_str}
+
+
+    请严格按以下标准打分：
+
+    5分：高度相关（直接命中核心研究，必读）
+
+    4分：相关（涉及相关技术或应用场景，值得参考）
+
+    3分：部分相关（底层方法或视角有启发，但领域有差异）
+
+    2分：边缘相关（仅仅提到通用关键词，研究重点不同）
+
+    1分：毫不相关
+
+
+    论文列表：
+
+    {papers_text}'
+  max_highlight: 5
+  max_read: 5
+system:
+  schedule_time: 09:00
